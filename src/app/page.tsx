@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Index from "../components/Index";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import PortfolioSection from "../components/PortfolioSection";
@@ -10,7 +10,7 @@ import ContactSection from "../components/ContactSection";
 
 const HomePage: React.FC = () => {
   return (
-    <Layout>
+    <Index>
       <HeroSection />
       <AboutSection />
       <SkillsSection />
@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
       <ServicesSection />
       <TestimonialsSection />
       <ContactSection />
-    </Layout>
+    </Index>
   );
 };
 

@@ -3,16 +3,16 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 
-interface LayoutProps {
+interface IndexProps {
   children: React.ReactNode;
   pageTitle?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({
+const Index: React.FC<IndexProps> = ({
   children,
-  pageTitle = "Your Name - Portfolio",
+  pageTitle = "Stephen Oshilaja - Portfolio",
 }) => {
   return (
     <div className="min-h-screen bg-brand-background text-brand-text font-sans">
@@ -37,4 +37,4 @@ const Layout: React.FC<LayoutProps> = ({
   );
 };
 
-export default Layout;
+export default Index;

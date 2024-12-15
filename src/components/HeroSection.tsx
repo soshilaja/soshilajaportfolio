@@ -50,7 +50,10 @@ const HeroSection: React.FC = () => {
               <span>Download CV</span>
             </button>
 
-            <Link href="/#contact" className="btn btn-outline flex items-center space-x-2 border border-brand-primary text-brand-primary px-6 py-3 rounded-lg hover:bg-brand-primary hover:text-white transition-colors">
+            <Link
+              href="/#contact"
+              className="btn btn-outline flex items-center space-x-2 border border-brand-primary text-brand-primary px-6 py-3 rounded-lg hover:bg-brand-primary hover:text-white transition-colors"
+            >
               <ChatBubbleBottomCenterTextIcon className="h-5 w-5" />
               <span>Let&#39;s Talk</span>
             </Link>
@@ -71,7 +74,7 @@ const HeroSection: React.FC = () => {
               width={600}
               height={600}
               // layout="fill"
-              objectFit="cover"
+              style={{ objectFit: "cover" }} // Use CSS style instead
               className="transition-transform duration-300 hover:scale-110"
             />
           </div>

@@ -8,13 +8,22 @@ import {
   MapPinIcon,
   PaperAirplaneIcon,
 } from "@heroicons/react/24/solid";
-import {sendContactEmail} from "../emailservice/emailService";
+import { sendContactEmail } from "../emailservice/emailService";
+
+
+
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  const [error, setError] = useState("");
+  // State for tracking if the error is visible
+  const [isErrorVisible, setIsErrorVisible] = useState(false);
+
+   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -28,17 +37,61 @@ const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real implementation, add form submission logic
-    sendContactEmail(formData)
-    // console.log("Form submitted", formData);
-    alert("Message sent! I will get back to you soon.");
+     // Validate inputs
+    const { name, email, message } = formData;
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    if (!name || name.length > 50) {
+      setError('Name is required and cannot exceed 50 characters');
+      setIsErrorVisible(true);
+      setTimeout(() => {
+        setError("");
+        setIsErrorVisible(false);
+        }, 5000);
+      return;
+    }
+
+    if (!email || !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+      setError('Please enter a valid email address');
+      setIsErrorVisible(true);
+      setTimeout(() => {
+        setError("");
+        setIsErrorVisible(false);
+}, 5000);
+      return;
+    }
+
+    if (!message || message.length > 500) {
+      setError("Message is required and cannot exceed 500 characters");
+      setIsErrorVisible(true);
+      setTimeout(() => {
+        setError("");
+          setIsErrorVisible(false);
+      }, 5000);
+      return;
+    }
+    
+    setIsSubmitting(true);
+      try {
+        sendContactEmail(formData);
+
+        alert("Message sent! I will get back to you soon.");
+
+              // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+      setIsErrorVisible(false);
+  
+      } catch (error) {
+        setError("An error occurred. Please try again later.");
+        throw error;
+      } finally {
+        setIsSubmitting(false);
+      }
+    
+
   };
 
   return (
@@ -116,7 +169,7 @@ const ContactSection: React.FC = () => {
               ))} */}
 
               <a
-                href= "https://www.github.com/soshilaja"
+                href="https://www.github.com/soshilaja"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-brand-primary transition-colors"
@@ -169,7 +222,8 @@ const ContactSection: React.FC = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  required
+                  maxLength={50}
+                  // required
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
                 />
               </div>
@@ -187,7 +241,8 @@ const ContactSection: React.FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  required
+                  maxLength={254}
+                  // required
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
                 />
               </div>
@@ -204,14 +259,20 @@ const ContactSection: React.FC = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  required
+                  // required
+                  maxLength={500}
                   rows={4}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
                 ></textarea>
               </div>
 
+              {isErrorVisible && (
+                <div className="text-red-700 p-2">{error}</div>
+              )}
+
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="w-full bg-brand-primary text-white py-3 rounded-md hover:bg-blue-700 transition-colors flex items-center justify-center"
               >
                 <PaperAirplaneIcon className="h-5 w-5 mr-2" />

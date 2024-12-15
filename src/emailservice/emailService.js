@@ -3,7 +3,6 @@
 import axios from "axios";
 
 const BREVO_KEY = process.env.NEXT_PUBLIC_BREVO_API_KEY;
-// console.log(BREVO_KEY);
 export const sendContactEmail = async (formData) => {
   const options = {
     method: "POST",
@@ -31,7 +30,7 @@ export const sendContactEmail = async (formData) => {
 
   try {
     const response = await axios.request(options);
-    console.log("Email sent successfully:", response.data);
+    // console.log("Email sent successfully:", response.data);
     return response.data;
   } catch (error) {
     console.error("Error sending email:", error);

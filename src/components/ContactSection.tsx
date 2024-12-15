@@ -30,7 +30,7 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     // In a real implementation, add form submission logic
     sendContactEmail(formData)
-    console.log("Form submitted", formData);
+    // console.log("Form submitted", formData);
     alert("Message sent! I will get back to you soon.");
 
     // Reset form

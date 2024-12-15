@@ -8,7 +8,7 @@ import {
   MapPinIcon,
   PaperAirplaneIcon,
 } from "@heroicons/react/24/solid";
-import { sendContactEmail } from "../emailservice/emailService";
+import { sendContactEmail } from "../lib/emailService";
 
 
 

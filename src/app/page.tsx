@@ -1,12 +1,12 @@
 import React from "react";
-import Index from "../components/Index";
-import HeroSection from "../components/HeroSection";
-import AboutSection from "../components/AboutSection";
-import PortfolioSection from "../components/PortfolioSection";
-import SkillsSection from "../components/SkillsSection";
-import ServicesSection from "../components/ServicesSection";
-import TestimonialsSection from "../components/TestimonialsSection";
-import ContactSection from "../components/ContactSection";
+import Index from "./index";
+import HeroSection from "./hero/page";
+import AboutSection from "./about/page";
+import PortfolioSection from "./portfolio/page";
+import SkillsSection from "./skills/page";
+import ServicesSection from "./services/page";
+import TestimonialsSection from "./testimonial/page";
+import ContactSection from "./contact/page";
 
 const HomePage: React.FC = () => {
   return (

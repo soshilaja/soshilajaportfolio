@@ -23,11 +23,11 @@ const testimonialsData = [
     avatar: "/images/chris_panton.jpg",
   },
   {
-    name: "Mary Nkurumah",
-    position: "Owner,",
+    name: "Mary Nkrumah and Jonathan Roberts",
+    position: "Owners,",
     company: "Mary's African Cuisine",
     quote:
-      "Collaborative, skilled, and always goes the extra mile. Their ability to understand complex requirements is remarkable.",
+      "Stephen is relentless when it comes to coming up with appropriate solutions and fixing any problems that occur. We trust him when it comes to our online apps, our online ordering, and our marketing.",
     avatar: "/images/mary_nkurumah.png",
   },
 ];

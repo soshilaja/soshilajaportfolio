@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   const downloadResume = () => {
     // In a real implementation, link to actual resume PDF
     window.open(
-      "https://drive.google.com/file/d/1729nlqVRPmLKz9wA85LX4MLplt-lVJuL/view?usp=sharing",
+      "https://drive.google.com/file/d/1qZvSNn7_fj6mwnUnr0Rg8YTTznGS_r6r/view?usp=sharing",
       "_blank"
     );
   };

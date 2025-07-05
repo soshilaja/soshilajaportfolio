@@ -82,7 +82,7 @@ const PortfolioSection: React.FC = () => {
       technologies: ["WordPress", "JavaScript", "HTML5", "CSS3"],
       imageUrl: "/images/lcp_fp.webp",
       // githubLink: "https://github.com/yourusername/project2",
-      liveLink: "http://lawrencoconstruction.com/services.html",
+      liveLink: "http://lawrencoconstruction.com/",
       category: "Web",
     },
     {

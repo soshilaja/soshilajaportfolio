@@ -13,9 +13,9 @@ const AboutSection: React.FC = () => {
 
   const skills = [
     { name: "Frontend Development", level: 90 },
-    { name: "React/Next.js", level: 85 },
-    { name: "UI/UX Design", level: 65 },
-    { name: "Backend Development", level: 70 },
+    { name: "React/Next.js", level: 90 },
+    { name: "UI/UX Design", level: 79 },
+    { name: "Backend Development", level: 87 },
   ];
 
   const companies = [

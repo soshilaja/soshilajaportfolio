@@ -41,16 +41,18 @@ const AboutSection: React.FC = () => {
 
           <div className="space-y-4 text-gray-600">
             <p>
-              I&#39;m a passionate web application developer with a keen eye for creating
-              intuitive and engaging digital experiences. With over a decade of
-              experience in servicing clients and half a decade of web development, I specialize in transforming
-              complex ideas into elegant, user-friendly solutions.
+              I&#39;m a passionate web application developer with a keen eye for
+              creating intuitive and engaging digital experiences. With over a
+              decade of experience in servicing clients and half a decade of web
+              development, I specialize in transforming complex ideas into
+              elegant, user-friendly solutions.
             </p>
             <p>
-              My journey began with a curiosity for how softwares, websites and web applications work and has
-              evolved into a mission to build technology that makes meaningful
-              impact in the lives of users. I love solving challenging problems and continuously
-              learning new technologies.
+              My journey began with a curiosity for how softwares, websites and
+              web applications work and has evolved into a mission to build
+              technology that makes meaningful impact in the lives of users. I
+              love solving challenging problems and continuously learning new
+              technologies.
             </p>
           </div>
 
@@ -104,18 +106,18 @@ const AboutSection: React.FC = () => {
           </div>
 
           <div className="mt-8">
-            <h3 className="text-xl font-semibold mb-6 text-center">
+            <h3 className="text-3xl font-semibold mb-6 text-center">
               Trusted By
             </h3>
-            <div className="flex justify-around items-center opacity-70">
+            <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center opacity-70">
               {companies.map((logo, index) => (
                 <Image
                   key={index}
                   src={logo}
-                  width={300}
-                  height={300}
+                  width={100}
+                  height={100}
                   alt={`Company Logo ${index + 1}`}
-                  className="w-20 h-auto grayscale hover:grayscale-0 transition-all"
+                  className="w-auto h-auto grayscale hover:grayscale-0 transition-all"
                 />
               ))}
             </div>

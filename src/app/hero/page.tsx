@@ -67,12 +67,13 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="flex justify-center items-center"
         >
-          <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-brand-primary">
+          <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-brand-primary">
             <Image
-              src="/images/stephen_oshilaja.webp" // Replace with your actual image
-              alt="Your Profile"
+              src="/images/stephen_oshilaja.webp" // image
+              alt="Stephen Oshilaja Profile"
               width={600}
               height={600}
+              priority
               // layout="fill"
               style={{ objectFit: "cover" }} // Use CSS style instead
               className="transition-transform duration-300 hover:scale-110"

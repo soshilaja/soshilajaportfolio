@@ -28,7 +28,7 @@ const PortfolioSection: React.FC = () => {
       description:
         "An e-commerce solution with advanced product management and payment integration.",
       technologies: ["HTML5", "JavaScript", "CSS3", "Wix Data", "Stripe"],
-      imageUrl: "/images/marys_fp.png",
+      imageUrl: "/images/marys_fp.webp",
       // githubLink: "https://github.com/yourusername/project1",
       liveLink: "https://www.marysafricancuisine.com/shop",
       category: "Web",
@@ -39,7 +39,7 @@ const PortfolioSection: React.FC = () => {
       description:
         "Business website designed to showcase service offerings. The homepage features a clean, modern layout with high-quality images of completed projects.",
       technologies: ["React.js", "TypeScript", "Tailwind", "Cloudinary"],
-      imageUrl: "/images/gtl_fp.png",
+      imageUrl: "/images/gtl_fp.webp",
       // githubLink: "https://github.com/yourusername/project2",
       liveLink: "https://www.goldentouchlandscaping.ca/",
       category: "Web",
@@ -58,7 +58,7 @@ const PortfolioSection: React.FC = () => {
         "Firebase",
         "Google Cloud Platform",
       ],
-      imageUrl: "/images/marys_mobile.png",
+      imageUrl: "/images/marys_mobile.webp",
       // githubLink: "https://github.com/yourusername/project2",
       liveLink: "https://marys-african-cuisine.glideapp.io/dl/0f5325",
       category: "Mobile",
@@ -69,7 +69,7 @@ const PortfolioSection: React.FC = () => {
       description:
         "A blog site that features research-inspired articles written by PhD students from various academic disciplines. The goal of the blog is to inspire readers.",
       technologies: ["WordPress", "JavaScript", "HTML5", "CSS3"],
-      imageUrl: "/images/dal_otfp.png",
+      imageUrl: "/images/dal_otfp.webp",
       // githubLink: "https://github.com/yourusername/project2",
       liveLink: "https://blogs.dal.ca/openthink/",
       category: "Web",
@@ -80,33 +80,84 @@ const PortfolioSection: React.FC = () => {
       description:
         "A Construction company website, where visions are turned into reality with unmatched quality and modern design.",
       technologies: ["WordPress", "JavaScript", "HTML5", "CSS3"],
-      imageUrl: "/images/lcp_fp.png",
+      imageUrl: "/images/lcp_fp.webp",
       // githubLink: "https://github.com/yourusername/project2",
       liveLink: "http://lawrencoconstruction.com/services.html",
       category: "Web",
     },
-    // {
-    //   id: 6,
-    //   title: "Blog site",
-    //   description:
-    //     "A blog site that features research-inspired articles written by PhD students from various academic disciplines. The goal of the blog is to inspire readers.",
-    //   technologies: ["WordPress", "JavaScript", "HTML5", "CSS3"],
-    //   imageUrl: "/images/dal_otfp.png",
-    //   // githubLink: "https://github.com/yourusername/project2",
-    //   liveLink: "https://blogs.dal.ca/openthink/",
-    //   category: "Web",
-    // },
-    // {
-    //   id: 7,
-    //   title: "Blog site",
-    //   description:
-    //     "A blog site that features research-inspired articles written by PhD students from various academic disciplines. The goal of the blog is to inspire readers.",
-    //   technologies: ["WordPress", "JavaScript", "HTML5", "CSS3"],
-    //   imageUrl: "/images/dal_otfp.png",
-    //   // githubLink: "https://github.com/yourusername/project2",
-    //   liveLink: "https://blogs.dal.ca/openthink/",
-    //   category: "Web",
-    // },
+    {
+      id: 6,
+      title: "Therapy Business Website",
+      description:
+        "Anahata Therapy is a holistic healing practice that offers clinical hypnotherapy and integrative therapeutic services to support emotional, mental, and physical well-being.",
+      technologies: ["WordPress", "JavaScript", "HTML5", "CSS3"],
+      imageUrl: "/images/anahataSexTherapy.webp",
+      // githubLink: "https://github.com/yourusername/project2",
+      liveLink: "https://www.anahatatherapy.ca/",
+      category: "Web",
+    },
+    {
+      id: 7,
+      title: "Non-profit Website",
+      description:
+        "HAAC.ca is the official website of the Health Association of African Canadians (HAAC)—a community-driven organization based in Nova Scotia that champions health equity for African Nova Scotian and African ancestry communities.",
+      technologies: ["WordPress", "JavaScript", "HTML5", "CSS3"],
+      imageUrl: "/images/healthassocofac.webp",
+      // githubLink: "https://github.com/yourusername/project2",
+      liveLink: "https://haac.ca/",
+      category: "Web",
+    },
+    {
+      id: 8,
+      title: "Logistics Web Application",
+      description:
+        "EcoDelivery is a modern, eco-conscious delivery platform designed to revolutionize local logistics with sustainability at its core.",
+      technologies: [
+        "React/Next.js",
+        "JavaScript",
+        "HTML5",
+        "Tailwind CSS",
+        "Firebase",
+      ],
+      imageUrl: "/images/ecodeliveryweb.webp",
+      // githubLink: "https://github.com/yourusername/project2",
+      liveLink: "https://ecodelivery-app.vercel.app/",
+      category: "Web",
+    },
+    {
+      id: 9,
+      title: "Driver Web Application",
+      description:
+        "The EcoDelivery Driver App is a streamlined, mobile-first interface designed for eco-conscious delivery drivers. Built to complement the EcoDelivery platform, this app helps drivers manage their routes, track deliveries, and contribute to a more sustainable logistics ecosystem.",
+      technologies: [
+        "React/Next.js",
+        "JavaScript",
+        "HTML5",
+        "Tailwind CSS",
+        "Firebase",
+      ],
+      imageUrl: "/images/ecodeliverydriver.webp",
+      // githubLink: "https://github.com/yourusername/project2",
+      liveLink: "https://ecodelivery-driver-app.vercel.app/",
+      category: "Web",
+    },
+    {
+      id: 10,
+      title: "Logistics Dashboard Application",
+      description:
+        "The EcoDelivery Dashboard is a web-based control panel designed for fleet managers, dispatchers, and business owners to monitor and optimize their green delivery operations. It provides real-time insights, operational tools, and sustainability metrics to ensure every delivery aligns with environmental goals.",
+      technologies: [
+        "React/Next.js",
+        "JavaScript",
+        "HTML5",
+        "Tailwind CSS",
+        "Firebase",
+      ],
+      imageUrl: "/images/ecodeliverydash.webp",
+      // githubLink: "https://github.com/yourusername/project2",
+      liveLink: "https://ecodelivery-dashboard.vercel.app/",
+      category: "Web",
+    },
     // Add more projects as needed
   ];
 

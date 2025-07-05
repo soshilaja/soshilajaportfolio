@@ -86,7 +86,7 @@ const AboutSection: React.FC = () => {
             </p>
             <div className="flex items-center">
               <Image
-                src="/images/chris_panton.jpg"
+                src="/images/chris_panton.webp"
                 alt="Testimonial Avatar"
                 width={300}
                 height={300}

@@ -12,7 +12,7 @@ const testimonialsData = [
     company: "Dalhousie University",
     quote:
       "Stephen is a star! Despite constant demands on their time and expertise, Stephen never fails to respond quickly and accurately to frequent last minute, time-sensitive requests for updates to our public facing and internal sites.",
-    avatar: "/images/niki_power.jpeg",
+    avatar: "/images/niki_power.webp",
   },
   {
     name: "Chris Panton",
@@ -20,7 +20,7 @@ const testimonialsData = [
     company: "Golden Touch Landscaping",
     quote:
       "A true problem solver who brings technical expertise and innovative thinking to every project. Highly recommended!",
-    avatar: "/images/chris_panton.jpg",
+    avatar: "/images/chris_panton.webp",
   },
   {
     name: "Mary Nkrumah and Jonathan Roberts",
@@ -28,7 +28,15 @@ const testimonialsData = [
     company: "Mary's African Cuisine",
     quote:
       "Stephen is relentless when it comes to coming up with appropriate solutions and fixing any problems that occur. We trust him when it comes to our online apps, our online ordering, and our marketing.",
-    avatar: "/images/mary_nkurumah.png",
+    avatar: "/images/mary_nkurumah.webp",
+  },
+  {
+    name: "Geneive Walker",
+    position: "Owner,",
+    company: "Anahata Integrated Sex & Relationship Therapy",
+    quote:
+      "If you’re seeking top-quality work from an expert IT services provider, Stephen is the best in the field! He is patient, highly responsive, and completes tasks efficiently.",
+    avatar: "/images/charisma-anahata.webp",
   },
 ];
 

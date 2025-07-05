@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   const downloadResume = () => {
     // In a real implementation, link to actual resume PDF
     window.open(
-      "https://drive.google.com/file/d/1729nlqVRPmLKz9wA85LX4MLplt-lVJuL/view?usp=sharing",
+      "https://drive.google.com/file/d/1qZvSNn7_fj6mwnUnr0Rg8YTTznGS_r6r/view?usp=sharing",
       "_blank"
     );
   };
@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
         >
           <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-brand-primary">
             <Image
-              src="/images/stephen_oshilaja.jpg" // Replace with your actual image
+              src="/images/stephen_oshilaja.webp" // Replace with your actual image
               alt="Your Profile"
               width={600}
               height={600}

@@ -22,6 +22,8 @@ const AboutSection: React.FC = () => {
     "/logos/gtl_logo_crop.jpg",
     "/logos/marys_african.png",
     "/logos/dal_logo.png",
+    "/logos/anahata_logo_update.webp",
+    "/logos/haac_logo.webp",
   ];
 
   return (

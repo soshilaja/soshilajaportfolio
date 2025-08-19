@@ -20,7 +20,7 @@ export const sendContactEmail = async (formData) => {
       },
       to: [
         {
-          email: "stephenoshilaja@gmail.com",
+          email: "stephenoshilaja@redmelon-consulting.com",
           name: "Stephen Oshilaja",
         },
       ],

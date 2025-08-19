@@ -16,7 +16,7 @@ export const sendContactEmail = async (formData) => {
     data: {
       sender: {
         name: formData.email,
-        email: "stephenoshilaja@gmail.com",
+        email: "stephenoshilaja@redmelon-consulting.com",
       },
       to: [
         {

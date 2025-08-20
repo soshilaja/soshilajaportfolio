@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
 
+// Add this GET method for testing
+export async function GET() {
+  return NextResponse.json({ message: "Contact API route is working" });
+}
+
 export async function POST(req) {
   console.log("API route called"); // This will show in Vercel logs
    // Add CORS headers

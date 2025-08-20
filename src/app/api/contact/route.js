@@ -7,13 +7,7 @@ export async function GET() {
 
 export async function POST(req) {
   console.log("API route called"); // This will show in Vercel logs
-   // Add CORS headers
-  const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-  };
-  
+     
   try {
     const { name, email, message } = await req.json();
 

@@ -1,13 +1,26 @@
 import { NextResponse } from "next/server";
 
 export async function POST(req) {
+  console.log("API route called"); // This will show in Vercel logs
+   // Add CORS headers
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+  
   try {
     const { name, email, message } = await req.json();
+
+     console.log("Request data:", { name, email, message });
 
     // Basic validation
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
+
+    console.log("About to call Brevo API");
+    console.log("API Key exists:", !!process.env.BREVO_API_KEY);
 
     const res = await fetch("https://api.brevo.com/v3/smtp/email", {
       method: "POST",
@@ -37,13 +50,16 @@ export async function POST(req) {
       }),
     });
 
+    console.log("Brevo response status:", res.status);
+
     const data = await res.json();
 
     if (!res.ok) {
+      console.log("Brevo error:", data);
       // Surface Brevo's error for debugging
       return NextResponse.json({ error: data }, { status: res.status });
     }
-
+console.log("Email sent successfully");
     return NextResponse.json({ ok: true, data });
   } catch (err) {
     return NextResponse.json(

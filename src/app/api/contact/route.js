@@ -24,7 +24,7 @@ export async function POST(req) {
         },
         to: [
           {
-            email: "stephenoshilaja@redmelon-consulting.com",
+            email: "stephenoshilaja@gmail.com",
             name: "Stephen Oshilaja",
           },
         ],

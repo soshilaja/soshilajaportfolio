@@ -1,6 +1,6 @@
 "use client"; // Add this at the top of the file
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { EyeIcon, CodeBracketIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
@@ -118,10 +118,11 @@ const PortfolioSection: React.FC = () => {
         "HTML5",
         "Tailwind CSS",
         "Firebase",
+        "Google Cloud Platform",
       ],
       imageUrl: "/images/ecodeliveryweb.webp",
       // githubLink: "https://github.com/yourusername/project2",
-      liveLink: "https://ecodelivery-app.vercel.app/",
+      liveLink: "https://ecodelivery.vercel.app",
       category: "Web",
     },
     {
@@ -135,6 +136,7 @@ const PortfolioSection: React.FC = () => {
         "HTML5",
         "Tailwind CSS",
         "Firebase",
+        "Google Cloud Platform",
       ],
       imageUrl: "/images/ecodeliverydriver.webp",
       // githubLink: "https://github.com/yourusername/project2",
@@ -152,15 +154,34 @@ const PortfolioSection: React.FC = () => {
         "HTML5",
         "Tailwind CSS",
         "Firebase",
+        "Google Cloud Platform",
       ],
       imageUrl: "/images/ecodeliverydash.webp",
       // githubLink: "https://github.com/yourusername/project2",
       liveLink: "https://ecodelivery-dashboard.vercel.app/",
       category: "Web",
     },
+    {
+      id: 11,
+      title: "Find the perfect service for your hair",
+      description:
+        "To build a vibrant online community that empowers talented hairdressers and accessory designers, offering customers a seamless and trustworthy platform to discover and book high-quality hair care services and unique accessories—all in one place.",
+      technologies: [
+        "React/Next.js",
+        "JavaScript",
+        "TypeScript",
+        "HTML5",
+        "SCSS",
+        "MongoDB",
+        "Express.js",
+      ],
+      imageUrl: "/images/hairly_hero.png",
+      // githubLink: "https://github.com/yourusername/project2",
+      liveLink: "https://hairly-ten.vercel.app/",
+      category: "Web",
+    },
     // Add more projects as needed
   ];
-
 
   // Filter projects based on selected category
   const filteredProjects =
